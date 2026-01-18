@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Radiology Report Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <h2>🏥 Radiology Report Assistant</h2>
+  <label>📋 Template:</label>
+  <textarea id="template" rows="8">
+CT ABDOMEN/PELVIS
+
+CLINICAL HISTORY: [HISTORY]
+
+TECHNIQUE: Standard protocol
+
+FINDINGS:
+• Liver:
+• Gallbladder:
+• Pancreas:
+• Kidneys:
+• Bowel:
+
+IMPRESSION:
+1. 
+  </textarea>
+
+  <label>📋 Clinical History:</label>
+  <input id="history" placeholder="e.g. Abdominal pain, fever" style="width:100%">
+
+  <label>🎤 Findings (type or speak):</label>
+  <div style="display:flex; gap:10px;">
+    <button id="micBtn">🎤 Start Voice</button>
+    <span id="micStatus"></span>
+  </div>
+  <textarea id="findings" rows="6" placeholder="Liver enlarged... or speak into mic..."></textarea>
+
+  <button id="aiBtn" style="padding:12px 24px; font-size:16px; background:#007bff; color:white; border:none;">✨ AI Generate Report</button>
+
+  <label>📄 Generated Report:</label>
+  <textarea id="report" rows="12" readonly style="background:#f8f9fa"></textarea>
+  <script src="/static/app.js"></script>
+</body>
+</html>

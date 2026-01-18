@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; }
+textarea, input { width: 100%; margin: 6px 0 16px 0; padding: 8px; }
+button { padding: 10px 14px; }
+.row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
